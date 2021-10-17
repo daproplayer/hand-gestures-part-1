@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+    <title>HAND GESTURE WEB APP - 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="3.4.1-jquery.min.js"></script>
+    <script src="js-bootstrap.min.js"></script>
+
+    <script src="dist-ml5.min.js"></script>
+    <script src="1.0.26-webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Project_112-style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+    <h3 class="btn btn-warning heading" style="font-size: large;">HAND GESTURE WEB APP - 1
+      <br>
+      <span>&#128076;</span>
+      <span>&#128077;</span>
+      <span>&#9996;</span>
+    </h3>
+    <h4>Take a selfie of a gesture to know about it's meaning</h4>
+          <br><br>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1 - </label>
+        <p class="gesture_name" id="result_gesture_name"></p>
+        <p class="gesture" id="update_gesture"></p>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predict Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
